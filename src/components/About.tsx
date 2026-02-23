@@ -1,0 +1,82 @@
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion";
+import { Code2, Database, Brain, Rocket } from "lucide-react";
+
+const About = () => {
+  return (
+    <section id="about" className="py-24 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-sm font-mono text-primary uppercase tracking-widest mb-4">
+              Background
+            </h2>
+            <h3 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+              Translating Vision into <br />
+              <span className="text-primary italic">Scalable Architecture</span>
+            </h3>
+
+            <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
+              With a deep foundation in <span className="text-foreground font-semibold">AI & Data Science</span>, I specialize in building end-to-end software systems that solve complex business problems. I bridge the gap between abstract requirements and production-ready code.
+            </p>
+
+            <p className="text-lg text-foreground/70 mb-8 leading-relaxed italic border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-xl">
+              “I’m not a vibe-coder. I engineer ideas into clean, scalable code and take them all the way to reliable deployment.”
+            </p>
+
+            <div className="grid grid-cols-2 gap-6">
+              {[
+                { icon: <Brain />, label: "AI Specialist" },
+                { icon: <Code2 />, label: "Full-Stack Engineer" },
+                { icon: <Database />, label: "System Architect" },
+                { icon: <Rocket />, label: "Deployment Pro" },
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-center space-x-3 text-foreground/80">
+                  <span className="text-primary">{item.icon}</span>
+                  <span className="font-medium">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="aspect-square rounded-3xl overflow-hidden glass border-2 border-glass-border relative group">
+              {/* Replace with actual image later if needed, using a placeholder gradient for now */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20 flex items-center justify-center">
+                <div className="text-primary/20">
+                  <Code2 size={120} className="group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </div>
+
+              {/* Floating Tech Badges */}
+              <div className="absolute top-8 left-8 glass px-4 py-2 rounded-xl text-sm font-mono border border-primary/30">
+                PyTorch
+              </div>
+              <div className="absolute bottom-12 right-12 glass px-4 py-2 rounded-xl text-sm font-mono border border-secondary/30">
+                Next.js
+              </div>
+              <div className="absolute top-1/2 -right-4 glass px-4 py-2 rounded-xl text-sm font-mono border border-accent/30 translate-x-1/2 -translate-y-1/2">
+                Ethereum
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
