@@ -24,7 +24,7 @@ const About = () => {
             </h3>
 
             <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
-              A fresh CS graduate on a <span className="text-foreground font-semibold">constant learning curve in AI &amp; Data Science</span>. I build freelance and personal projects to turn theory into working software &mdash; with a strong interest in <span className="text-foreground font-semibold">Fintech, Blockchain &amp; Quantitative Trading</span>.
+              I&apos;m <span className="text-foreground font-semibold">Thiviru</span>, a final year undergraduate reading <span className="text-foreground font-semibold">AI &amp; Data Science at Robert Gordon University (RGU)</span>. I build freelance and personal projects to turn theory into working software &mdash; with a strong interest in <span className="text-foreground font-semibold">Fintech, Blockchain &amp; Quantitative Trading</span>.
             </p>
 
             <p className="text-lg text-foreground/70 mb-8 leading-relaxed italic border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-xl">

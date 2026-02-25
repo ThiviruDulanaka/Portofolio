@@ -14,9 +14,9 @@ const Footer = () => {
     <footer className="py-12 border-t border-glass-border">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
         <div>
-          <div className="text-xl font-bold mb-2">Theran<span className="text-primary italic">.dev</span></div>
+          <div className="text-xl font-bold mb-2">Thiviru<span className="text-primary italic">.dev</span></div>
           <p className="text-sm text-foreground/50">
-            Engineering ideas into scalable systems — from code to deployment.
+            Final year AI &amp; Data Science undergraduate at Robert Gordon University.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
 
         <div className="text-sm text-foreground/40">
-          © {year} Theran. All rights reserved.
+          © {year} Thiviru. All rights reserved.
         </div>
       </div>
     </footer>

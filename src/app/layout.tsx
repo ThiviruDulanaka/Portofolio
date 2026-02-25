@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Theran | AI & Full-Stack Engineer",
-  description: "Engineering ideas into scalable, production-ready systems — from concept and clean code to deployment.",
+  title: "Thiviru | AI & Full-Stack Developer",
+  description: "Final year AI & Data Science undergraduate at Robert Gordon University, building projects in AI, fintech, and quantitative trading.",
 };
 
 export default function RootLayout({

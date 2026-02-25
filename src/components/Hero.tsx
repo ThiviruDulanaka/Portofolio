@@ -3,30 +3,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Terminal } from "lucide-react";
+import HeroBg from "./HeroBg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background Animated Elements */}
+      {/* Animated Tech Background */}
       <div className="absolute inset-0 z-0">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute -top-[10%] -left-[10%] w-[60%] h-[60%] rounded-full bg-primary/20 blur-[120px]"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute -bottom-[10%] -right-[10%] w-[60%] h-[60%] rounded-full bg-secondary/10 blur-[120px]"
-        />
+        <HeroBg />
+        {/* Centre vignette so text stays readable */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/40 to-background/90" />
+        {/* bottom fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center">
@@ -37,13 +25,13 @@ const Hero = () => {
         >
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-mono text-primary mb-6">
             <Terminal size={14} />
-            <span>Fresh Graduate · Open to Opportunities</span>
+            <span>Final Year · AI &amp; Data Science · RGU</span>
           </div>
 
           <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-            AI & Data Science <span className="text-primary italic">Learner</span>
+            Hi, I&apos;m <span className="text-primary italic">Thiviru</span>
             <br />
-            Full-Stack <span className="text-secondary">Developer</span>
+            AI &amp; Data Science <span className="text-secondary">Developer</span>
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed">

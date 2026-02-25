@@ -35,7 +35,7 @@ const Navbar = () => {
             T
           </div>
           <span className="text-xl font-bold tracking-tight">
-            Theran<span className="text-primary italic">.dev</span>
+            Thiviru<span className="text-primary italic">.dev</span>
           </span>
         </Link>
 
