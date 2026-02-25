@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Brain, Database, Code2, Cloud } from "lucide-react";
+import { Brain, Database, Code2, Cloud, BarChart3, TrendingUp } from "lucide-react";
 
 interface SkillGroup {
   category: string;
@@ -31,6 +31,16 @@ const skillGroups: SkillGroup[] = [
     category: "Deployment & Cloud",
     icon: <Cloud className="text-secondary" />,
     skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform", "Vercel / Netlify"],
+  },
+  {
+    category: "Data Analytics",
+    icon: <BarChart3 className="text-accent" />,
+    skills: ["Power BI", "SQL"],
+  },
+  {
+    category: "Algorithmic Trading & Quant Development",
+    icon: <TrendingUp className="text-primary" />,
+    skills: ["MQL5", "MetaTrader 5 (MT5)", "Trading Automation", "Strategy Backtesting"],
   },
 ];
 

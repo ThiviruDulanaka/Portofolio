@@ -114,12 +114,12 @@ export default function HeroBg() {
       };
 
       // transformer nodes — left strip only
-      pushGroup(TRANSFORMER_LABELS, "transformer", [0.01, 0.27], [0.03, 0.95]);
+      pushGroup(TRANSFORMER_LABELS, "transformer", [0.01, 0.27], [0.15, 0.95]);
       // blockchain nodes — right strip only
-      pushGroup(BLOCKCHAIN_LABELS, "blockchain", [0.73, 0.99], [0.03, 0.95]);
+      pushGroup(BLOCKCHAIN_LABELS, "blockchain", [0.73, 0.99], [0.15, 0.95]);
       // quant labels — corners only (top-left + bottom-right)
       const half = Math.floor(QUANT_LABELS.length / 2);
-      pushGroup(QUANT_LABELS.slice(0, half), "quant", [0.01, 0.26], [0.01, 0.38]);
+      pushGroup(QUANT_LABELS.slice(0, half), "quant", [0.01, 0.26], [0.15, 0.38]);
       pushGroup(QUANT_LABELS.slice(half), "quant", [0.74, 0.99], [0.62, 0.99]);
     };
 
@@ -213,6 +213,13 @@ export default function HeroBg() {
         n.x += n.vx;
         n.y += n.vy;
 
+        // ── Navbar safe-zone: prevent nodes from overlapping the fixed header
+        const navbarSafeY = 100;
+        if (n.y < navbarSafeY) {
+          n.vy += 0.15; // push down
+          n.vy = Math.min(1.2, n.vy); // cap downward speed
+        }
+
         // ── Centre safe-zone: repel nodes away from the text area
         // Safe zone: x in [30%, 70%] of width, y in [15%, 85%] of height
         const safeX1 = W * 0.30;
@@ -236,6 +243,10 @@ export default function HeroBg() {
         // wall bounce
         if (n.x < 20 || n.x > W - 20) n.vx *= -1;
         if (n.y < 20 || n.y > H - 20) n.vy *= -1;
+        if (n.y < navbarSafeY) { // Extra check for top boundary relative to navbar
+          // If somehow forced above, ensure it reflects back down properly
+          if (n.vy < 0) n.vy *= -1;
+        }
       });
 
       // ── draw / move particles
