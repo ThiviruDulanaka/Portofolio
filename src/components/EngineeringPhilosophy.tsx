@@ -33,8 +33,8 @@ const EngineeringPhilosophy = () => {
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "Business Alignment",
-      desc: "Ensuring technical decisions directly contribute to scalability and organizational goals.",
+      title: "Continuous Learning",
+      desc: "Constantly exploring new fields — from AI and data science to fintech, blockchain, and quantitative trading.",
     },
   ];
 

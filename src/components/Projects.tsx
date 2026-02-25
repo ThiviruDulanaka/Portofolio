@@ -23,7 +23,7 @@ const projects: Project[] = [
     problem: "Manufacturers struggled with 15% inventory waste due to volatile demand signals.",
     solution: "Engineered a Transformer-based forecasting engine with automated data pipelines and a React-based monitoring dashboard.",
     tech: ["Python", "PyTorch", "AWS Lambda", "PostgreSQL", "React"],
-    impact: "Reduced waste by 12% and improved fulfillment speed by 20% in production tests.",
+    impact: "Demonstrated a 12% reduction in simulated inventory waste and 20% faster fulfillment in test environments.",
     github: "#",
     demo: "#",
     type: "AI",
@@ -35,7 +35,7 @@ const projects: Project[] = [
     problem: "Legacy monolithic system couldn't scale to meet growing multi-region demand.",
     solution: "Architected a microservices-based platform with robust authentication, real-time sync, and automated CI/CD pipelines.",
     tech: ["Next.js", "Node.js", "Redis", "Docker", "Kubernetes"],
-    impact: "Supported 50k+ concurrent users with 99.9% uptime during peak loads.",
+    impact: "Built end-to-end as a freelance project; handled multi-user sessions and real-time sync in a staging environment.",
     github: "#",
     demo: "#",
     type: "Full-Stack",
@@ -122,7 +122,7 @@ const Projects = () => {
 
         <div className="mt-20 text-center">
           <p className="text-foreground/60 mb-8 max-w-xl mx-auto">
-            These are representative projects showcasing end-to-end engineering. I focus on building reliable systems that survive production scale.
+            These are learning and freelance projects that reflect my journey — each one taught me new skills and pushed me further.
           </p>
           <button className="px-8 py-3 rounded-full border border-primary/30 text-primary font-bold hover:bg-primary/10 transition-all duration-300">
             View Full Documentation on GitHub

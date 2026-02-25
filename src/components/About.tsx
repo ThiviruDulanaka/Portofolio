@@ -19,24 +19,24 @@ const About = () => {
               Background
             </h2>
             <h3 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-              Translating Vision into <br />
-              <span className="text-primary italic">Scalable Architecture</span>
+              Learning, Building, <br />
+              <span className="text-primary italic">Growing Every Day</span>
             </h3>
 
             <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
-              With a deep foundation in <span className="text-foreground font-semibold">AI & Data Science</span>, I specialize in building end-to-end software systems that solve complex business problems. I bridge the gap between abstract requirements and production-ready code.
+              A fresh CS graduate on a <span className="text-foreground font-semibold">constant learning curve in AI &amp; Data Science</span>. I build freelance and personal projects to turn theory into working software &mdash; with a strong interest in <span className="text-foreground font-semibold">Fintech, Blockchain &amp; Quantitative Trading</span>.
             </p>
 
             <p className="text-lg text-foreground/70 mb-8 leading-relaxed italic border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-xl">
-              “I’m not a vibe-coder. I engineer ideas into clean, scalable code and take them all the way to reliable deployment.”
+              &ldquo;I learn best by building. Every project teaches me something new &mdash; and I never stop asking why.&rdquo;
             </p>
 
             <div className="grid grid-cols-2 gap-6">
               {[
-                { icon: <Brain />, label: "AI Specialist" },
-                { icon: <Code2 />, label: "Full-Stack Engineer" },
-                { icon: <Database />, label: "System Architect" },
-                { icon: <Rocket />, label: "Deployment Pro" },
+                { icon: <Brain />, label: "AI & Data Science" },
+                { icon: <Code2 />, label: "Full-Stack Dev" },
+                { icon: <Database />, label: "Fintech & Quant Interest" },
+                { icon: <Rocket />, label: "Freelance Projects" },
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center space-x-3 text-foreground/80">
                   <span className="text-primary">{item.icon}</span>
@@ -69,7 +69,7 @@ const About = () => {
                 Next.js
               </div>
               <div className="absolute top-1/2 -right-4 glass px-4 py-2 rounded-xl text-sm font-mono border border-accent/30 translate-x-1/2 -translate-y-1/2">
-                Ethereum
+                Pandas
               </div>
             </div>
           </motion.div>

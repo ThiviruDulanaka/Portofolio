@@ -37,17 +37,17 @@ const Hero = () => {
         >
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-mono text-primary mb-6">
             <Terminal size={14} />
-            <span>Ready for Deployment</span>
+            <span>Fresh Graduate · Open to Opportunities</span>
           </div>
 
           <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-            AI & Data Science <span className="text-primary italic">Engineer</span>
+            AI & Data Science <span className="text-primary italic">Learner</span>
             <br />
             Full-Stack <span className="text-secondary">Developer</span>
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed">
-            I engineer ideas into <span className="text-foreground font-semibold">scalable, production-ready systems</span> — from concept and clean code to deployment.
+            On a <span className="text-foreground font-semibold">constant learning curve</span> — building projects in AI, data science, and full-stack development, with growing interests in <span className="text-primary font-semibold">Fintech, Blockchain & Quantitative Trading</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
