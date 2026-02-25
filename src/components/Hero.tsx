@@ -43,7 +43,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
             AI & Data Science <span className="text-primary italic">Engineer</span>
             <br />
-            Blockchain & Full-Stack <span className="text-secondary">Developer</span>
+            Full-Stack <span className="text-secondary">Developer</span>
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed">

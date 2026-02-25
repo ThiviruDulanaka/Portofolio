@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Code2, Cpu, Link as LinkIcon, Database, Server, Smartphone } from "lucide-react";
+import { ExternalLink, Github, Code2, Cpu } from "lucide-react";
 
 interface Project {
   title: string;
@@ -13,7 +13,7 @@ interface Project {
   impact: string;
   github?: string;
   demo?: string;
-  type: "AI" | "Blockchain" | "Full-Stack";
+  type: "AI" | "Full-Stack";
 }
 
 const projects: Project[] = [
@@ -28,17 +28,7 @@ const projects: Project[] = [
     demo: "#",
     type: "AI",
   },
-  {
-    title: "DeFi Yield Aggregator",
-    category: "Blockchain",
-    problem: "Fragmented yield opportunities made manual staking inefficient and risky.",
-    solution: "Designed upgradeable smart contracts with automated rebalancing logic and a high-performance frontend for real-time TVL tracking.",
-    tech: ["Solidity", "Hardhat", "TypeScript", "The Graph", "Next.js"],
-    impact: "Successfully deployed on Sepolia; survived rigorous security audits with zero critical vulnerabilities.",
-    github: "#",
-    demo: "#",
-    type: "Blockchain",
-  },
+
   {
     title: "Enterprise SaaS Infrastructure",
     category: "Full-Stack",
@@ -64,7 +54,7 @@ const ProjectCard = ({ project, idx }: { project: Project; idx: number }) => (
       <div className="aspect-video rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center p-8 relative overflow-hidden group">
         <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
         {project.type === "AI" && <Cpu size={80} className="text-primary/40" />}
-        {project.type === "Blockchain" && <LinkIcon size={80} className="text-secondary/40" />}
+
         {project.type === "Full-Stack" && <Code2 size={80} className="text-accent/40" />}
 
         <div className="absolute top-4 left-4 glass px-3 py-1 rounded-full text-xs font-mono border border-white/10 uppercase tracking-tighter">

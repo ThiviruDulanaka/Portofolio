@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Brain, Database, Link as LinkIcon, Code2, Cloud } from "lucide-react";
+import { Brain, Database, Code2, Cloud } from "lucide-react";
 
 interface SkillGroup {
   category: string;
@@ -21,11 +21,7 @@ const skillGroups: SkillGroup[] = [
     icon: <Database className="text-secondary" />,
     skills: ["Apache Spark", "Kafka", "PostgreSQL", "MongoDB", "Data Modeling", "ETL Pipelines"],
   },
-  {
-    category: "Blockchain & Web3",
-    icon: <LinkIcon className="text-accent" />,
-    skills: ["Solidity", "Ether.js", "Hardhat", "Smart Contracts", "DeFi Protocols", "The Graph"],
-  },
+
   {
     category: "Full-Stack Development",
     icon: <Code2 className="text-primary" />,

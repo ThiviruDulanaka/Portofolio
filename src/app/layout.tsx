@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Theran | AI, Blockchain & Full-Stack Engineer",
+  title: "Theran | AI & Full-Stack Engineer",
   description: "Engineering ideas into scalable, production-ready systems — from concept and clean code to deployment.",
 };
 
